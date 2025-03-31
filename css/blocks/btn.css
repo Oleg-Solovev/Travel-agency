@@ -1,0 +1,48 @@
+.btn {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 14px;
+  font-family: "Exo-2", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  border-radius: 60px;
+  background-color: transparent;
+  color: #9E5FC4;
+  border: 1px solid #9e5fc4;
+  cursor: pointer;
+}
+
+.btn--icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.btn--icon svg {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.btn--galery {
+  width: 100%;
+}
+
+.btn--aside {
+  width: 165px;
+  color: #fff;
+  background-color: #9E5FC4;
+}
+
+.btn--bg-lilac {
+  background-color: #9e5fc4;
+  color: #fff;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}

@@ -1,0 +1,14 @@
+.cards-tour {
+    max-width: 100%;
+    min-height: 1600px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 380px auto 380px;
+}
+
+.cards-tour__item--size-XL {
+    grid-column: span 2;
+}

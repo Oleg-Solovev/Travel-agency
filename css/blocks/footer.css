@@ -1,0 +1,126 @@
+.footer {
+  background-color: #212226;
+}
+
+.footer__wrap-top {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__logo-link {
+  margin-right: auto;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.footer__info-tel {
+  font-family: "Exo-2", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.footer__info-description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+  margin: 0;
+}
+
+.footer__wrap-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 160px;
+  grid-template-rows: auto 40px;
+  gap: 10px 30px;
+  padding: 30px 0;
+}
+
+.footer__block-left {
+  display: flex;
+  flex-direction: column;
+  grid-row: span 2;
+}
+
+.footer__block-X2 {
+  grid-column: span 2;
+}
+
+.footer__block-right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  grid-row: span 2;
+}
+
+.footer__upper-text {
+  display: block;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer__block .footer__upper-text {
+  margin-bottom: 7px;
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__list--row {
+  flex-direction: row;
+}
+
+.footer__list--gap-5 {
+  gap: 5px;
+}
+
+.footer__list--column-2 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px 45px;
+}
+
+.footer__text-item {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__language {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: auto;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__text--copyright {
+  margin: 0;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: auto;
+  color: rgba(255, 255, 255, 0.5);
+}

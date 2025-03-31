@@ -1,0 +1,14 @@
+.aside-security {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.aside-security__img {
+    max-height: 200px;
+    border-radius: 20px;
+}
+
+.aside-security__btn {
+    width: 100%;
+}
