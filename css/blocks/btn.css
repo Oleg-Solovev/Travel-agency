@@ -1,7 +1,7 @@
 .btn {
   display: block;
   text-align: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 14px;
   font-family: "Exo-2", "Arial", sans-serif;
   font-size: 14px;

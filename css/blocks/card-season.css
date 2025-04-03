@@ -25,6 +25,7 @@
     background: linear-gradient(87.12deg, #5839B0 1.65%, #4162B8 100%);
     flex-direction: row;
     align-items: center;
+    gap: 10px;
     padding: 30px;
 }
 
@@ -37,6 +38,12 @@
 
 .card-season--feedback .card-season__img {
     margin: 0;
+}
+
+.card-season__title-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card-season__title {
@@ -81,4 +88,24 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-  }
+}
+
+@media (max-width: 720px) {
+    .card-season__img-wrap {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .card-season--feedback {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-season__img-wrap {
+        flex-direction: column;
+        gap: 0;
+    }
+}

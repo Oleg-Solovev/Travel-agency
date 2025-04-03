@@ -3,3 +3,25 @@
     gap: 30px;
     flex-wrap: wrap;
 }
+
+/* @media (max-width: 880px) {
+    .main-nav {
+        flex-direction: column;
+        gap: 10px;
+    } 
+} */
+
+@media (max-width: 880px) {
+    .main-nav {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        border: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(100%);
+    }
+}

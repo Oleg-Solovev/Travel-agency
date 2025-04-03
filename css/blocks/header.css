@@ -74,7 +74,7 @@
   list-style: none;
   margin: 0;
   display: flex;
-  gap: 10px;
+  gap: 15px;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 15px 0 0;
@@ -85,4 +85,33 @@
   font-size: 15px;
   line-height: 20px;
   color: #fff;
+}
+
+@media (max-width: 880px) {
+
+  .header__wrapper {
+    grid-template-columns: 1fr auto;
+  }
+
+  .header__options-list {
+    justify-content: flex-start;
+  }
+
+}
+
+@media (max-width: 560px) {
+  .header__options-list,
+  .header__location-icon,
+  .header__favorites {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+  }
 }

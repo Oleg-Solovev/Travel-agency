@@ -15,3 +15,22 @@
 .cards-season__feedback {
     grid-column: span 2;
 }
+
+@media (max-width: 720px) {
+    .cards-season {
+        grid-template-columns: 50% 50%;
+    }
+
+    .cards-season__bali {
+        grid-column: span 2;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .cards-season {
+        grid: none;
+        display: flex;
+        flex-direction: column;
+    }
+}
