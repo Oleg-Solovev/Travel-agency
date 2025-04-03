@@ -12,3 +12,23 @@
 .cards-tour__item--size-XL {
     grid-column: span 2;
 }
+
+
+
+@media (max-width: 850px) {
+    .cards-tour {
+        grid-template-columns: 50% 50%;
+    }
+
+    .cards-tour__item--size-XL {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 550px) {
+    .cards-tour {
+        grid: none;
+        display: flex;
+        flex-direction: column;
+    }
+}

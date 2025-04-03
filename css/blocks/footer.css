@@ -124,3 +124,25 @@
   margin-top: auto;
   color: rgba(255, 255, 255, 0.5);
 }
+
+@media (max-width: 720px) {
+  .footer__info-tel {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .footer__wrap-top {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .footer__info {
+    align-items: center;
+  }
+
+  .footer__logo-link {
+    margin: 0;
+  }
+
+}

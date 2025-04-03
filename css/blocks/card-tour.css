@@ -1,14 +1,6 @@
-.card {
-  background: #9c9494;
-  border-radius: 7px;
-}
-
 .card-tour {
-  display: flex;
-  flex-direction: column;
-  min-height: 528px;
+  background: #fff;
   border-radius: 24px;
-  background-color: #ffffff;
   overflow: hidden;
 }
 
@@ -24,14 +16,16 @@
 .card-tour__img {
   height: 240px;
   width: 100%;
+  
 }
 
 .card-tour__content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 18px 30px 30px 30px;
   height: 100%;
-  min-height: 288px;
+  min-height: 240px;
 }
 
 .card-tour__price-and-btn-wrapper {
@@ -52,6 +46,7 @@
 .card-tour__content-top {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 9px;
   margin: 0 0 10px;
 }
@@ -100,7 +95,7 @@
   display: block;
   font-size: 16px;
   line-height: 20px;
-  margin: 0 0 auto;
+  margin: 0 0 10px;
   font-weight: 400;
 }
 
@@ -114,6 +109,8 @@
 .card-tour__price-wrapper {
   display: flex;
   flex-direction: column;
+  max-width: 180px;
+  width: 100%;
   gap: 6px;
   margin: 0 0 30px 0;
 }
@@ -137,9 +134,25 @@
 
 .card-tour__btns-wrap {
   display: flex;
+  align-items: center;
   gap: 13px;
+  width: 100%;
 }
 
 .card-tour__btn {
-  width: 263px;
+  max-width: 263px;
+  width: 100%;
 }
+
+@media (max-width: 1040px) {
+  .card-tour--flat .card-tour__price-and-btn-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 550px) {
+  .card-tour__img {
+    height: 150px;
+  }
+}
+
