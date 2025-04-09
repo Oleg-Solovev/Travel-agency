@@ -60,3 +60,9 @@
     line-height: 16px;
     color: rgba(36, 36, 36, 0.5);
 }
+
+@media (max-width: 700px) {
+    .memos__wrap {
+        flex-wrap: wrap;
+    }
+}

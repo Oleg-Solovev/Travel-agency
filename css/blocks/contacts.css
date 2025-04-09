@@ -1,5 +1,5 @@
 .contacts {
-  padding-bottom: 80px;
+  padding-bottom: 7vw;
 }
 
 .contacts__title {
@@ -13,13 +13,15 @@
 .contacts__wrap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 130px;
-  margin: 0 0 80px;
+  gap: 7vw;
+  margin: 0 0 7vw;
 }
 
 .contacts__img {
   width: 500px;
-  height: 350px;
+  min-height: 350px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .contacts__wrap-info {
@@ -80,4 +82,28 @@
 .contacts__btn--bg-lilac {
   background-color: #9e5fc4;
   color: #fff;
+}
+
+@media (max-width: 800px) {
+  .contacts__wrap-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .contacts__wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts__info-title {
+    margin: 0 auto;
+  }
+
+  .contacts__btn {
+    margin: 0 auto;
+  }
+
+  .contacts__img { 
+    min-height: 200px;
+  }
 }

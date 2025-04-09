@@ -1,12 +1,12 @@
 .security {
-    padding-bottom: 80px;
+    padding-bottom: 7vw;
 }
 
 .security__wrap {
     display: grid;
     grid-template-columns: 1fr 290px;
-    gap: 180px;
-    margin-bottom: 60px;
+    gap: 5vw;
+    margin-bottom: 5vw;
 }
 
 
@@ -43,4 +43,8 @@
     gap: 10px;
 }
 
-
+@media (max-width: 700px) {
+    .security__wrap {
+        grid-template-columns: 1fr;
+    }
+}

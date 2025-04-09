@@ -91,6 +91,7 @@
 
 .footer__list--gap-5 {
   gap: 5px;
+  margin-bottom: 10px;
 }
 
 .footer__list--column-2 {
@@ -125,7 +126,30 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-@media (max-width: 720px) {
+
+
+@media (max-width: 880px) {
+
+  .footer__wrap-bottom {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__block-X2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+  }
+
+}
+
+@media (max-width: 670px) {
   .footer__info-tel {
     font-size: 14px;
     font-weight: 400;
@@ -143,6 +167,19 @@
 
   .footer__logo-link {
     margin: 0;
+  }
+
+  .footer__wrap-bottom {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
   }
 
 }

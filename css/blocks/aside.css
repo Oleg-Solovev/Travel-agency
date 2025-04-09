@@ -1,7 +1,10 @@
 .aside {
+    max-width: 300px;
+    width: 100%;
     border-radius: 20px;
     border: 1px solid #E1E1E4;
     padding: 25px;
+    margin: 0 auto;
 }
 
 .aside__title {
