@@ -1,0 +1,28 @@
+.aside {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #E1E1E4;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.aside__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 15px;
+}
+
+.aside__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aside__item {
+
+    & a {
+        line-height: 20px;
+    }
+}

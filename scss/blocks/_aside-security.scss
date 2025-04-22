@@ -1,0 +1,17 @@
+.aside-security {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 17px;
+
+    & img {
+        max-height: 200px;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+
+    & > a {
+        max-width: 300px;
+        width: 100%;
+    }
+}
