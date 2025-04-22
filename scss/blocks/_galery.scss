@@ -1,0 +1,148 @@
+.galery {
+    padding-bottom: 7vw;
+}
+
+.galery__wrap-block {
+    display: grid;
+    grid-template-columns: 1fr 215px;
+    gap: 20px;
+}
+
+.galery__foto-wrap {
+    grid-row: span 2;
+}
+
+.galery__list {
+    max-width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5vw;
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 3fr 1fr 1fr 2fr;
+}
+
+.galery__item {
+    width: 100%;
+    overflow: hidden;
+}
+
+.galery__img-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.galery__image {
+    width: 100%;
+    height: calc(100% - 20px);
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.galery__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: right;
+    color: rgba(36, 36, 36, 0.5);
+}
+
+.galery__item--istanbul {
+    grid-column: span 2;
+}
+
+.galery__item--bali {
+    grid-column: span 2;
+}
+
+.galery__item--istanbul-night {
+    grid-row: 2 / 4;
+    grid-column: 1;
+}
+
+.galery__item--nusa-penida {
+    grid-column: span 2;
+    grid-row: 2 / 3;
+    height: 240px;
+}
+
+.galery__item--maldives {
+    grid-column: span 1;
+    grid-row: 2 / 3;
+    height: 240px;
+}
+
+.galery__item--abu-dhabi {
+    grid-column: span 3;
+    grid-row: 3 / 5;
+}
+
+.galery__item--dubai {
+    grid-column: span 1;
+    grid-row: 4 / 6;
+}
+
+.galery__item--thailand {
+    grid-column: span 2;
+    min-height: 240px;
+}
+
+.galery__item--thailand-park {
+    grid-column: span 1;
+    min-height: 240px;
+}
+
+@media (max-width: 650px) {
+    .galery__list {
+        grid-template-columns: 2fr 1fr 2fr;
+    }
+
+    .galery__item--bali {
+        grid-column: 3;
+    }
+
+    .galery__item--istanbul-night {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+
+    .galery__item--nusa-penida {
+        grid-column: 3;
+        height: 100%;
+    }
+
+    .galery__item--maldives {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .galery__item--abu-dhabi {
+        grid-column: span 3;
+        grid-row: 3;
+    }
+
+    .galery__item--dubai {
+        grid-column: span 2;
+    }
+
+    .galery__item--thailand {
+        grid-column: span 2;
+        min-height: 240px;
+    }
+}
+
+@media (max-width: 550px) {
+    .galery__wrap-block {
+        grid-template-columns: 1fr;
+    }
+
+    .galery__foto-wrap {
+        grid-row: 2;
+    }
+
+    .aside-nav {
+        grid-row: 1;
+    }
+}

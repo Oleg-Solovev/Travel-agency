@@ -1,0 +1,79 @@
+.btn {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  border-radius: 60px;
+  background-color: transparent;
+  color: $color-lilac;
+  border: 1px solid $color-lilac;
+  outline: none;
+  cursor: pointer;
+  transition: outline .3s ease-in-out, background-color .3s ease-in-out, color .3s ease-in-out;
+
+  &:focus {
+    outline: 2px solid $color-lilac-light;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    background-color: $color-lilac-light;
+    color: $color-white;
+  }
+
+  &:active {
+    background-color: $color-dark;
+    color: $color-white;
+  }
+
+}
+
+.btn--icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  & svg {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    fill: transparent;
+    transition: outline .3s ease-in-out, fill .3s ease-in-out;
+  }
+
+  & svg:focus {
+    outline: 2px solid $color-lilac-light;
+    outline-offset: 2px;
+  }
+
+  & svg:hover {
+    fill: $color-lilac-light;
+  }
+
+  & svg:active {
+    fill: $color-dark;
+  }
+}
+
+.btn--galery {
+  width: 100%;
+}
+
+.btn--aside {
+  width: 165px;
+  color: $color-white;
+  background-color: $color-lilac;
+}
+
+.btn--bg-lilac {
+  background-color: $color-lilac;
+  color: $color-white;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}

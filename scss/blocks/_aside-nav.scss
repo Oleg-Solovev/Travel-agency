@@ -1,0 +1,32 @@
+.aside-nav {
+    padding: 2vw;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.aside-nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.aside-nav__link {
+    display: flex;
+    align-items: center;
+
+    & svg {
+        margin-right: 10px;
+    }
+
+    & span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &--violet span {
+        font-weight: 700;
+        color: #9E5FC4;
+    }
+}
+

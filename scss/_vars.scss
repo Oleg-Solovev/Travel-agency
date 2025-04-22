@@ -1,0 +1,15 @@
+// Переменные
+$fz: "Exo-2", "Arial", sans-serif;
+$color-black: #242424;
+$color-white: #fff;
+$color-lilac: #9e5fc4;
+$color-lilac-light: #b881da;
+$color-dark: #67278f;
+
+%text-style-fz {
+    font-family: $fz;
+    color: $color-black;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+}
