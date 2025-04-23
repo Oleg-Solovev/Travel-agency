@@ -14,17 +14,17 @@
   transition: outline .3s ease-in-out, background-color .3s ease-in-out, color .3s ease-in-out;
 
   &:focus {
-    outline: 2px solid $color-lilac-light;
+    outline: 2px solid lighten($color-lilac, 20%);
     outline-offset: 2px;
   }
 
   &:hover {
-    background-color: $color-lilac-light;
+    background-color: lighten($color-lilac, 20%);
     color: $color-white;
   }
 
   &:active {
-    background-color: $color-dark;
+    background-color: darken($color-lilac, 20%);
     color: $color-white;
   }
 
@@ -45,17 +45,17 @@
     transition: outline .3s ease-in-out, fill .3s ease-in-out;
   }
 
-  & svg:focus {
-    outline: 2px solid $color-lilac-light;
+  & svg:focus-visible {
+    outline: 2px solid lighten($color-lilac, 20%);
     outline-offset: 2px;
   }
 
   & svg:hover {
-    fill: $color-lilac-light;
+    fill: lighten($color-lilac, 20%);
   }
 
   & svg:active {
-    fill: $color-dark;
+    fill: darken($color-lilac, 20%);
   }
 }
 
