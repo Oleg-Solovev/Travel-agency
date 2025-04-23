@@ -1,6 +1,6 @@
 .aside-nav {
     padding: 2vw;
-    background-color: #fff;
+    background-color: $color-white;
     border-radius: 16px;
 }
 
@@ -26,7 +26,7 @@
 
     &--violet span {
         font-weight: 700;
-        color: #9E5FC4;
+        color: $color-lilac;
     }
 }
 

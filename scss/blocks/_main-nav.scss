@@ -5,38 +5,28 @@
 }
 
 .main-nav__item {
-    border-radius: 40%;
-    padding: 5px;
+    border-radius: 50%;
+    padding: 5px 15px;
     outline: none;
     transition: background-color .4s ease-in-out, outline .4s ease-in-out;
 
     & a:focus-visible {
-        outline: 2px solid #b881da;
+        outline: 2px solid lighten($color-lilac, 20%);
         outline-offset: 5px;
         border-radius: 40%;
     }
 
     &:hover {
-        background-color: #9E5FC4;
+        background-color: $color-lilac;
     }
 
     &:active {
-        background-color: #b881da;
+        background-color: darken($color-lilac, 10%);
     }
 }
 
-// сделать бургер-меню
-// @media (max-width: 880px) {
-//     .main-nav {
-//         position: absolute;
-//         width: 1px;
-//         height: 1px;
-//         margin: -1px;
-//         padding: 0;
-//         overflow: hidden;
-//         white-space: nowrap;
-//         border: 0;
-//         clip: rect(0 0 0 0);
-//         clip-path: inset(100%);
-//     }
-// }
+@media (max-width: 560px) {
+    .main-nav {
+        gap: 20px;
+    }
+}

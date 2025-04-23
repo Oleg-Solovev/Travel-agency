@@ -15,10 +15,37 @@
   height: 48px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.3);
-}
+  transition: border .3s ease-in-out;
 
-.social__link svg {
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
+  & svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  & svg path {
+    fill: rgba(255, 255, 255, 0.3);
+    transition: fill .3s ease-in-out;
+  }
+
+  &:focus {
+    border: 1px solid lighten($color-lilac, 20%);
+  }
+  &:focus svg path {
+    fill: lighten($color-lilac, 20%);
+  }
+
+  &:hover {
+    border: 1px solid lighten($color-lilac, 20%);
+  }
+  &:hover svg path {
+    fill: lighten($color-lilac, 20%);
+  }
+
+  &:active {
+    background-color: darken($color-lilac, 20%);
+  }
+  &:active svg path {
+    fill: darken($color-lilac, 20%);
+  }
 }
